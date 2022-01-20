@@ -32,6 +32,7 @@ li a {
   }
 
 .navbar{
+    height: 100px;
     background: #fff;
 	/* background-image: url(./img/nevr.png);
     background-position-y: 35%;
@@ -168,24 +169,74 @@ li a{
     }
   } */
 
+@media (min-width: 576px) {
+    .navbar {
+        height: auto;
+  }
+}
 @media (min-width: 768px) {
-    #navbarSupportedContent {
-        height: 330px;
-    }
-    
+    .navbar {
+        height: auto;
+  }
 }
 @media (min-width: 992px) {
-    #navbarSupportedContent {
-        max-height: 47px;
-    }
+  .navbar {
   }
-  @media (min-width: 1200px) {
-    #navbarSupportedContent {
-        max-height: 47px;
-    }
+}
+@media (min-width: 1200px) {
+    .navbar {
   }
-  @media (min-width: 1400px) {
-    #navbarSupportedContent {
-        max-height: 47px;
-    }
+}
+@media (min-width: 1400px) {
+    .navbar {
   }
+}
+/* @media (max-width: 1174px) {
+    .btnf:link {
+        font-size: 11px;
+        padding: 16px 7px;
+  }
+    li a {
+        font-size: 17px;
+    }
+    li{
+        margin: 0px 3px;
+        
+    }
+}
+*/
+/* @media (max-width: 1173) {
+    .btnf:link {
+        font-size: 11px;
+        padding: 16px 7px;
+  }
+    li a {
+        font-size: 11px;
+    }
+    li{
+        margin: 0px 13px;
+        
+    }
+}  */
+@media (max-width: 1173px) {
+    .btnf:link {
+        font-size: 15px;
+        padding: 14px 10px;
+  }
+  li{
+	margin: 0px 2px;
+	
+}
+}
+@media (min-width: 1174px) {
+    .btnf:link {
+        font-size: 17px;
+        padding: 16px 10px;
+  }
+}
+@media (min-width: 1238px) {
+    .btnf:link {
+        font-size: 20px;
+        padding: 12px 20px;
+  }
+}
