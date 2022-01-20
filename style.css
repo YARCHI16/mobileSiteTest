@@ -174,3 +174,18 @@ li a{
     }
     
 }
+@media (min-width: 992px) {
+    #navbarSupportedContent {
+        max-height: 47px;
+    }
+  }
+  @media (min-width: 1200px) {
+    #navbarSupportedContent {
+        max-height: 47px;
+    }
+  }
+  @media (min-width: 1400px) {
+    #navbarSupportedContent {
+        max-height: 47px;
+    }
+  }
