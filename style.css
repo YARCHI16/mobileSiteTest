@@ -3,6 +3,13 @@ html, body {
 	height: 100%;
 }
 
+/* .carousel-inner {
+    max-height: 405px;
+}
+
+.txtCont{
+    position: absolute;
+} */
 
 li a {
     position: relative;
@@ -31,6 +38,65 @@ li a {
       transform-origin: left top;
   }
 
+div .photo{
+    height: 100vh;
+    max-height: 405px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+#dropB{
+    text-decoration: none;
+    cursor: pointer;
+}
+#dropB li a:after {
+    background: rgba(0, 0, 0, 0);
+}
+#dropB li a:hover:after {
+    transform: scale(1, 1);
+    transform-origin: left top;
+    background: rgba(0, 0, 0, 0);
+}
+
+.slider{
+    color: #fff !important;
+}
+
+.photo .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.photo .title{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+}
+
+.slick-dots li button:before {
+    font-size: 13px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: rgb(72, 175, 235) !important;
+}
+.slick-dots li button:before {
+    opacity: .75;
+    color: rgb(255, 255, 255) !important;
+}
+
 .navbar{
     height: 100px;
     background: #fff;
@@ -40,9 +106,59 @@ li a {
     /* height: 130px; */
 }
 
+.navbar-brand img{
+	width: 210px;
+    height: 118px;
+}
+
+.nav_toggle{
+    width: 30px;
+    padding: 15px 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.nav-toggle_item{
+    display: block;
+    width: 23px;
+    height: 3px;
+
+    background-color: #000;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-right: 15px;
+}
+
+.nav-toggle_item:before,
+.nav-toggle_item:after{
+    content: "";
+    width: 23px;
+    height: 3px;
+
+    background-color: #000;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-toggle_item:before{
+    top: -8px;
+}
+.nav-toggle_item:after{
+    bottom: -8px;
+}
+
 div #navbarSupportedContent{
     max-width: 1020px;
 }
+
 
 
 .d-block{
@@ -58,10 +174,6 @@ body{
 }
 
 
-.navbar-brand img{
-	width: 210px;
-    height: 118px;
-}
 
 img {
 	max-width: 100%;	
@@ -118,26 +230,28 @@ li a{
     content: "";
     display: inline-block;
     height: 100%;
-    width: 100%;
+    /* width: 100%;  */
     border-radius: 100px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -1; 
     transition: all .4s;
     color: #fff;
+    background: rgba(0, 0, 0, 0);
 }
 
 .btn-white::after {
     background-color: #80aad4;
     color: #fff;
+    background: rgba(0, 0, 0, 0);
 }
 
-.btnf:hover::after {
+/* .btnf:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
     color: #fff;
-}
+} */
 
 .btn-animated {
     animation: moveInBottom 5s ease-out;
@@ -157,40 +271,30 @@ li a{
     }
 }
 
-.b{
-	height: 100%;
-	width: 100%;
-	background: #000;
-}
-
 /* @media (max-width: 1400px) {
     .container-lg{
       max-width: 720px;
     }
   } */
 
-@media (min-width: 576px) {
+@media (min-width: 300px) {
     .navbar {
         height: auto;
   }
 }
-@media (min-width: 768px) {
-    .navbar {
-        height: auto;
+@media (max-width: 992px) {
+  .container-lg {
+      height: 115px;
   }
 }
-@media (min-width: 992px) {
-  .navbar {
-  }
-}
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .navbar {
   }
 }
 @media (min-width: 1400px) {
     .navbar {
   }
-}
+} */
 /* @media (max-width: 1174px) {
     .btnf:link {
         font-size: 11px;
@@ -239,4 +343,13 @@ li a{
         font-size: 20px;
         padding: 12px 20px;
   }
+    .navbar{
+        height: 115px;
+    }
+}
+@media (max-width: 850px) {
+    div .photo{
+        height: 100vh;
+        max-height: 375px;
+    }
 }
