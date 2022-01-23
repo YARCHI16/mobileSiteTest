@@ -205,9 +205,6 @@ div .photo{
     transform: rotate(-45deg) translateX(-3px);
 }
 
-.nav-link{
-
-}
 
 div #navbarSupportedContent{
     max-width: 1020px;
@@ -347,6 +344,15 @@ li a{
       padding-bottom: 4rem !important;
       background-color: rgba(59, 149, 223, 0.753);
       height: 100%;
+      animation: pulseg 1s linear;
+  }
+  @keyframes pulseg {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   .nav-toggle{
