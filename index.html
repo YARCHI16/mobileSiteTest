@@ -23,7 +23,7 @@
 			      <span class="navbar-toggler-icon"></span>
 			    </button> -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto mb-lg-0" id="nvBar">
+					<ul class="navbar-nav mr-auto mb-lg-0" id="nvBar" style="transition: all 3s;">
 						<li class="nav-item">
 							<a href="#" class="nav-link bordDec">Главная</a>
 						</li>
@@ -134,19 +134,17 @@ crossorigin="anonymous"></script>
 		$("navbar-nav").addClass('active')
 	});
 
-	window.onload = function () {
-
 	//получаем идентификатор элемента
-		var a = document.getElementById('nav_toggle');
-		var b = document.getElementById('nvBar')
+	var a = document.getElementById('nav_toggle');
+	var b = document.getElementById('nvBar')
 
-		//вешаем на него событие
-		a.onclick = function() {
-			//производим какие-то действия
-			b.classList.toggle('active')
-			a.classList.toggle('active')
-		}
-	} 
+	//вешаем на него событие
+	a.onclick = function() {
+		//производим какие-то действия
+		b.classList.toggle('active')
+		a.classList.toggle('active')
+	}
+	
 </script>
 <!-- <script type="text/javascript" src="main.js"></script> -->
 </body>
