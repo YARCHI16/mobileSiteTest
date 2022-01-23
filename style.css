@@ -156,21 +156,22 @@ div .photo{
 }
 .navbar-nav.active{
     display: block !important;
-    animation: pulse 1s linear;
+    /* animation: pulse 1s linear; */
 }
+
 
 /* #navbarSupportedContent{
     animation: pulse 2s linear;
 } */
 
-@keyframes pulse {
+/* @keyframes pulse {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
     }
-  }
+  } */
 
 
 
@@ -341,10 +342,8 @@ li a{
   }
   .navbar-nav{
       display: none !important;
-      padding-bottom: 4rem !important;
       background-color: rgba(59, 149, 223, 0.753);
-      height: 100%;
-      animation: pulseg 1s linear;
+      animation: pulseg .6s linear;
   }
   @keyframes pulseg {
     0% {
