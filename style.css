@@ -360,7 +360,6 @@ li a{
   }
   .collapse{
       display: block !important;
-      animation: bgF 5s linear;
   }
   .nav-link{
       font-size: 20px;
