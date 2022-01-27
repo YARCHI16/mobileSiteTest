@@ -8,27 +8,26 @@
 	<link rel="stylesheet" href="./slick/slick.css">
 	<link rel="stylesheet" href="./slick/slick-theme.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="./css/bootstrap.css">
 	<script src="./js/bootstrap.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<title>Document</title>
 </head>
 <body>
+	<!-- <div class="container">+38 (096)-5-003-003</div> -->
 	<header id="header" class="sticky-top">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-lg">
 				<a href="#" class="navbar-brand"><img src="img/last.png" id="logImg" alt=""></a>
-				<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			      <span class="navbar-toggler-icon"></span>
-			    </button> -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto mb-lg-0" id="nvBar" style="transition: all 3s;">
 						<li class="nav-item">
-							<a href="#" class="nav-link bordDec">Главная</a>
+							<a href="#" class="active-link nav-link bordDec">Главная</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link bordDec">Направления</a>
+							<a href="#" class="nav-link bordDec ">Направления</a>
 						</li>
 						<li class="nav-item dropdown">
           					<a class="nav-link bordDec" href="#" id="navDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,11 +36,14 @@
 							<i class="fa fa-angle-down"></i>
 				          </a>
 				          <ul class="dropdown-menu" id="dropB" aria-labelledby="navbarDropdown">
-				            <li><a class="dropdown-item" href="#">Дневной стационар</a></li>
-				            <li><a class="dropdown-item" href="#">Герудотерапия (Пиявки)</a></li>
 				            <li><a class="dropdown-item" href="#">Выезд невролога</a></li>
 				            <li><a class="dropdown-item" href="#">Выезд пульмонолога</a></li>
 				            <li><a class="dropdown-item" href="#">Выезд терапевта</a></li>
+				            <li><a class="dropdown-item" href="#">Амбулаторный прием</a></li>
+				            <li><a class="dropdown-item" href="#">Дневной стационар</a></li>
+				            <li><a class="dropdown-item" href="#">Медикаментозная терапия</a></li>
+				            <li><a class="dropdown-item" href="#">Герудотерапия (Пиявки)</a></li>
+				            <li><a class="dropdown-item" href="#">Лечебные медикаментозные блокады</a></li>
 				          </ul>
 				        </li>
 						<li class="nav-item">
@@ -67,27 +69,6 @@
 		</nav>
 	</header>
 	<main>
-		<!-- <div class="container-fluid">
-		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<img src="./img/main-slider-bg.jpg" class="d-block" alt="...">
-				<div class="txtCont"><h1>Hello world</h1></div>
-			  </div>
-			  <div class="carousel-item ">
-				<img src="./img/covidland-hero-bg.jpg" class="d-block" alt="...">
-			  </div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Предыдущий</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Следующий</span>
-			</button>
-		  </div>
-		</div> -->
 
 		<div class="container-fluid">
 			<div class="slider">
@@ -111,41 +92,425 @@
 		</div>
 
 
+		<!-- about clinic -->
+		<div class="intro-sec bg-blue">
+			<div class="container">
+			   <div class="row intro">
+				  <div class="col-lg-6" style="vertical-align: middle;">
+					 <div class="intro-text pt-6 pb-6">
+						<div class="intro_name color-primary">Клиника «НАИ»</div>
+						<h1 class="intro__title mb-3">Неврологическая клиника</h1>
+						<p class="intro__subtitle mb-0">НАИ - единственная узкопрофильная клиника неврологии в Харькове. Мы специализируемся на диагностике и лечении пациентов с патологией центральной и периферической нервной системы. Наши специалисты окажут Вам квалифицированную медицинскую помощь</p>
+					 </div>
+				  </div>
+				  <div class="col-lg-6 align-items-end d-flex">
+					  <div class=" brain-img">
+						<video id="video-brain" autoplay muted preload="auto" loop>
+							<source type="video/mp4" src="./img/333.webm">
+						</video>
+						</div>
+				  </div>
+			   </div>
+			</div>
+		 </div>
+
+
+		 <!-- clinic team -->
+		 <!-- <div class="prof-sec sec">
+			<div class="container">
+			   <div class="h2 mb-4 mb-md-6 title title-sub text-center">Направления</div>
+			   <div class="row prof">
+				  <div class="col-md-4">
+					 <ul class="list list-big mb-0">
+						<li><a href="prof/vrach-uzi/index.htm">Врач УЗИ</a></li>
+						<li><a href="prof/gastroenterolog/index.htm">Гастроэнтеролог</a></li>
+						<li><a href="prof/gematolog/index.htm">Гематолог</a></li>
+						<li><a href="prof/ginekolog/index.htm">Гинеколог</a></li>
+						<li><a href="prof/dermatolog/index.htm">Дерматолог</a></li>
+						<li><a href="prof/detskij-allergolog/index.htm">Детский аллерголог</a></li>
+						<li><a href="prof/detskij-gematolog/index.htm">Детский гематолог</a></li>
+						<li><a href="prof/detskij-kardiolog/index.htm">Детский кардиолог</a></li>
+						<li><a href="prof/detskij-nevrolog/index.htm">Детский невролог</a></li>
+						<li><a href="prof/detskij-nefrolog/index.htm">Детский нефролог</a></li>
+						<li><a href="prof/detskij-pulmonolog/index.htm">Детский пульмонолог</a></li>
+					 </ul>
+				  </div>
+				  <div class="col-md-4">
+					 <ul class="list list-big mb-0">
+						<li><a href="prof/detskij-hirurg/index.htm">Детский хирург</a></li>
+						<li><a href="prof/detskij-endokrinolog/index.htm">Детский эндокринолог</a></li>
+						<li><a href="prof/immunolog/index.htm">Иммунолог</a></li>
+						<li><a href="prof/kardiolog/index.htm">Кардиолог</a></li>
+						<li><a href="prof/kosmetolog/index.htm">Косметолог</a></li>
+						<li><a href="prof/lor/index.htm">Лор</a></li>
+						<li><a href="prof/nevrolog/index.htm">Невролог</a></li>
+						<li><a href="prof/neonatolog/index.htm">Неонатолог</a></li>
+						<li><a href="prof/onkolog/index.htm">Онколог</a></li>
+						<li><a href="prof/ortoped-travmatolog/index.htm">Ортопед-травматолог</a></li>
+						<li><a href="prof/pediatr/index.htm">Педиатр</a></li>
+					 </ul>
+				  </div>
+				  <div class="col-md-4">
+					 <ul class="list list-big mb-0">
+						<li><a href="prof/psiholog/index.htm">Психолог</a></li>
+						<li><a href="prof/psihoterapevt/index.htm">Психотерапевт</a></li>
+						<li><a href="prof/revmatolog/index.htm">Ревматолог</a></li>
+						<li><a href="prof/semejnyj-vrach/index.htm">Семейный врач</a></li>
+						<li><a href="prof/sosudistyj-hirurg/index.htm">Сосудистый хирург</a></li>
+						<li><a href="prof/terapevt/index.htm">Терапевт</a></li>
+						<li><a href="prof/urolog/index.htm">Уролог</a></li>
+						<li><a href="prof/hirurg/index.htm">Хирург</a></li>
+						<li><a href="prof/endokrinolog/index.htm">Эндокринолог</a></li>
+					 </ul>
+				  </div>
+			   </div>
+			</div>
+		 </div> -->
+
+
+
+		 <!-- doctors slider -->
+
+		 <div class="doctors-sec sec lazy" data-bg="url(https://unilik.ua/wp-content/themes/unilik/assets/images/bg-1.png)">
+			<div class="container">
+			   <div class="h2 mb-4 mb-md-6 title title-sub text-center"><h1>Наши <span class="section-doctors">врачи</span></h1></div>
+			   <div class="row doctors doctors-main-slider">
+				  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card">
+						<div class="text-center">
+						   <a href="doctor/latyshev-leontij-evgenievich/index.htm" class="card-photo">
+							  <img src="./img/neurolog.png" alt="Латышев Леонтий Евгениевич" data-lazy-src="https://unilik.ua/wp-content/uploads/2020/06/detskij-gematolog-latyshev-harkov-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2020/06/detskij-gematolog-latyshev-harkov-350x350.jpg" alt="Латышев Леонтий Евгениевич"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500 text-center"><a href="doctor/latyshev-leontij-evgenievich/index.htm">Латышев Леонтий Евгениевич</a></div>
+						   <p class="card-text text-md mb-3 text-center">Семейный врач, гематолог, педиатр.<br> Руководитель медицинского центра «УніЛік»</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0 text-center" >
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-reward.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук"></noscript>
+								 </span>
+								 <span>Кандидат медицинских наук</span>
+							  </li>
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="18 лет опыта" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-doctor.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="18 лет опыта"></noscript>
+								 </span>
+								 <span>18 лет опыта</span>
+							  </li>
+						   </ul>
+						</div>
+					 </div>
+				  </div>
+				  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card">
+						<div class="text-center">
+						   <a href="doctor/zajczeva-evgeniya-nikolaevna/index.htm" class="card-photo">
+							  <img src="./img/kidNeurolog.png" alt="Зайцева Евгения Николаевна" data-lazy-src="https://unilik.ua/wp-content/uploads/2020/06/detskij-kardiorevmatolog-zajceva-evgenija-kharkov-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2020/06/detskij-kardiorevmatolog-zajceva-evgenija-kharkov-350x350.jpg" alt="Зайцева Евгения Николаевна"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500"><a href="doctor/zajczeva-evgeniya-nikolaevna/index.htm">Зайцева Евгения Николаевна</a></div>
+						   <p class="card-text text-md mb-3">Детский кардиолог.<br> Главный внештатный кардиоревматолог Харьковского городского совета</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0">
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Врач высшей категории" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-reward.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Врач высшей категории"></noscript>
+								 </span>
+								 <span>Врач высшей категории</span>
+							  </li>
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="25 лет опыта" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-doctor.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="25 лет опыта"></noscript>
+								 </span>
+								 <span>25 лет опыта</span>
+							  </li>
+						   </ul>
+						</div>
+					 </div>
+				  </div>
+				  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card">
+						<div class="text-center">
+						   <a href="doctor/egorkina-anastasiya-petrovna/index.htm" class="card-photo">
+							  <img src="./img/osteopat.png" alt="Егоркина Анастасия Петровна" data-lazy-src="https://unilik.ua/wp-content/uploads/2020/09/vrach-ginekolog-egorkina-kharkov-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2020/09/vrach-ginekolog-egorkina-kharkov-350x350.jpg" alt="Егоркина Анастасия Петровна"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500"><a href="doctor/egorkina-anastasiya-petrovna/index.htm">Егоркина Анастасия Петровна</a></div>
+						   <p class="card-text text-md mb-3">Гинеколог</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0"></ul>
+						</div>
+					 </div>
+				  </div>
+				  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card" >
+						<div class="text-center">
+						   <a href="doctor/glushhenko-igor-vladimirovich/index.htm" class="card-photo">
+							  <img src="./img/diagnost.png" alt="Глущенко Игорь Владимирович" data-lazy-src="https://unilik.ua/wp-content/uploads/2020/09/vrach-uzi-glushhenko-igor-harkov-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2020/09/vrach-uzi-glushhenko-igor-harkov-350x350.jpg" alt="Глущенко Игорь Владимирович"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500"><a href="doctor/glushhenko-igor-vladimirovich/index.htm">Глущенко Игорь Владимирович</a></div>
+						   <p class="card-text text-md mb-3">Врач ультразвуковой диагностики (УЗИ)</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0">
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Врач высшей категории" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-reward.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Врач высшей категории"></noscript>
+								 </span>
+								 <span>Врач высшей категории</span>
+							  </li>
+						   </ul>
+						</div>
+					 </div>
+				  </div>
+				  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card">
+						<div class="text-center">
+						   <a href="doctor/afanaseva-oksana-oleksandrovna/index.htm" class="card-photo">
+							  <img src="./img/oftalmolog.png" alt="Афанасьева Оксана Александровна" data-lazy-src="https://unilik.ua/wp-content/uploads/2022/01/afanasieva_oksana_aleksandrovna-3-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2022/01/afanasieva_oksana_aleksandrovna-3-350x350.jpg" alt="Афанасьева Оксана Александровна"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500"><a href="doctor/afanaseva-oksana-oleksandrovna/index.htm">Афанасьева Оксана Александровна</a></div>
+						   <p class="card-text text-md mb-3">Детский гематолог, педиатр. Доцент кафедры педиатрии №2 ХНМУ</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0">
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-reward.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук"></noscript>
+								 </span>
+								 <span>Кандидат медицинских наук</span>
+							  </li>
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="19 лет опыта" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-doctor.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="19 лет опыта"></noscript>
+								 </span>
+								 <span>19 лет опыта</span>
+							  </li>
+						   </ul>
+						</div>
+					 </div>
+				  </div>
+				  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card">
+						<div class="text-center">
+						   <a href="doctor/kulikova-darya-aleksandrovna/index.htm" class="card-photo">
+							  <img src="./img/terapevt.png" alt="Куликова Дарья Александровна" data-lazy-src="https://unilik.ua/wp-content/uploads/2020/06/vrach-kardiolog-kulikova-harkov-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2020/06/vrach-kardiolog-kulikova-harkov-350x350.jpg" alt="Куликова Дарья Александровна"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500"><a href="doctor/kulikova-darya-aleksandrovna/index.htm">Куликова Дарья Александровна</a></div>
+						   <p class="card-text text-md mb-3">Кардиолог<br>Ассистент кафедры хирургии сердца и сосудов и детской хирургии ХМАПО</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0">
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-reward.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук"></noscript>
+								 </span>
+								 <span>Кандидат медицинских наук</span>
+							  </li>
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="7 лет опыта" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-doctor.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="7 лет опыта"></noscript>
+								 </span>
+								 <span>7 лет опыта</span>
+							  </li>
+						   </ul>
+						</div>
+					 </div>
+				  </div>
+				  <!-- <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card">
+						<div class="text-center">
+						   <a href="doctor/olenich-vera-borisovna/index.htm" class="card-photo">
+							  <img src="./wp-content/uploads/2020/06/detskij-nevrolog-olenich-harkov-350x350.jpg" alt="Оленич Вера Борисовна" data-lazy-src="https://unilik.ua/wp-content/uploads/2020/06/detskij-nevrolog-olenich-harkov-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2020/06/detskij-nevrolog-olenich-harkov-350x350.jpg" alt="Оленич Вера Борисовна"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500"><a href="doctor/olenich-vera-borisovna/index.htm">Оленич Вера Борисовна</a></div>
+						   <p class="card-text text-md mb-3">Детский невролог высшей квалификационной категории</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0">
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-reward.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Кандидат медицинских наук"></noscript>
+								 </span>
+								 <span>Кандидат медицинских наук</span>
+							  </li>
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="12 лет опыта" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-doctor.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-doctor.png" alt="12 лет опыта"></noscript>
+								 </span>
+								 <span>12 лет опыта</span>
+							  </li>
+						   </ul>
+						</div>
+					 </div>
+				  </div>
+				  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					 <div class="card">
+						<div class="text-center">
+						   <a href="doctor/kryzhnaya-svetlana-ivanovna/index.htm" class="card-photo">
+							  <img src="./wp-content/uploads/2021/09/kryzhnaja-svetlana-ivanovna-vrach-dermatovenerolog-350x350.jpg" alt="Крыжная Светлана Ивановна" data-lazy-src="https://unilik.ua/wp-content/uploads/2021/09/kryzhnaja-svetlana-ivanovna-vrach-dermatovenerolog-350x350.jpg">
+							  <noscript><img src="wp-content/uploads/2021/09/kryzhnaja-svetlana-ivanovna-vrach-dermatovenerolog-350x350.jpg" alt="Крыжная Светлана Ивановна"></noscript>
+						   </a>
+						</div>
+						<div class="card-body" style="height: 345.938px;">
+						   <div class="card-name text-lg font-500"><a href="doctor/kryzhnaya-svetlana-ivanovna/index.htm">Крыжная Светлана Ивановна</a></div>
+						   <p class="card-text text-md mb-3">Дерматовенеролог</p>
+						   <ul class="list-unstyled text-md list-img card-list mb-0">
+							  <li>
+								 <span class="img-wrap">
+									<img src="./wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Доктор медицинских наук, профессор" data-lazy-src="https://unilik.ua/wp-content/themes/unilik/assets/images/icons/icon-reward.png">
+									<noscript><img src="wp-content/themes/unilik/assets/images/icons/icon-reward.png" alt="Доктор медицинских наук, профессор"></noscript>
+								 </span>
+								 <span>Доктор медицинских наук, профессор</span>
+							  </li>
+						   </ul>
+						</div>
+					 </div>
+				  </div> -->
+			   </div>
+			</div>
+		 </div>
+   
+		 
+
+
 	</main>
-	<!-- <div class="b"></div> -->
-<script
-src="https://code.jquery.com/jquery-3.6.0.min.js"
-integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-crossorigin="anonymous"></script>
-<script src="./slick/slick.min.js"></script>
-<script type="text/javascript">
-	$('.slider').slick({
-		dots: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 3500,
-		speed: 2000,
-		adaptiveHeight: !0
-	});
 
-	$("#nav-toggle").on("click", function(event) {
-		event.preventDefault();
+	<!--The div element for the map -->
 
-		$("navbar-nav").addClass('active')
-	});
+	<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1525.3999818430816!2d36.27455296685828!3d49.98498308955213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09ea7f6e451%3A0x9fc88946a71d658a!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0L_RgNC-0YHQvy4sIDk2LCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1643268928533!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-	//получаем идентификатор элемента
-	var a = document.getElementById('nav_toggle');
-	var b = document.getElementById('nvBar')
+	<footer class="footer">
+		<div class="container-footer">
+			<div class="row-footer">
+				<div class="footer-col">
+					<h4>Наши контакты</h4>
+					<ul>
+						<li><a href="tel:+380965003003">+38 (096)-5-003-003</a></li>
+						<li><a href="tel:+380935003003">+38 (093)-5-003-003</a></li>
+						<li><a href="#">ул. Московский проспект 96</a></li>
+						<li><a href="mailto:nai.clinic1@gmail.com">nai.clinic1@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Навигация</h4>
+					<ul>
+						<li><a href="#">Направления</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Врачи</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>online shop</h4>
+					<ul>
+						<li><a href="#">watch</a></li>
+						<li><a href="#">bag</a></li>
+						<li><a href="#">shoes</a></li>
+						<li><a href="#">dress</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Социальные сети</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-telegram-plane"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec-footer" style="height: 50px; width: 100%; background-color: rgb(67, 177, 250); padding: 1rem;">
+			<div class="container">
+				 <p style="color: white;">© Клиника «НАИ»</p>
+			</div>
+		</div>
+   </footer>
 
-	//вешаем на него событие
-	a.onclick = function() {
-		//производим какие-то действия
-		b.classList.toggle('active')
-		a.classList.toggle('active')
-	}
-	
-</script>
-<!-- <script type="text/javascript" src="main.js"></script> -->
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script src="./slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$('.slider').slick({
+			dots: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 3500,
+			speed: 2000,
+			adaptiveHeight: !0
+		});
+
+		$('.doctors-main-slider').slick({
+			autoplay: false,
+			autoplaySpeed: 3000,
+			arrows: false,
+			dots: true,
+			adaptiveHeight: !1,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			}, {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			}, {
+				breakpoint: 478,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}]
+		});
+
+		$("#nav-toggle").on("click", function(event) {
+			event.preventDefault();
+
+			$("navbar-nav").addClass('active')
+		});
+
+		//получаем идентификатор элемента
+		var a = document.getElementById('nav_toggle');
+		var b = document.getElementById('nvBar')
+
+		//вешаем на него событие
+		a.onclick = function() {
+			//производим какие-то действия
+			b.classList.toggle('active')
+			a.classList.toggle('active')
+		}
+		
+		
+		
+	</script>
+	<!-- <script type="text/javascript" src="main.js"></script> -->
 </body>
 </html>
